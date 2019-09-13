@@ -26,20 +26,8 @@ namespace boost {
 namespace beast {
 namespace detail {
 
-template<typename T>
-struct static_const
-{
-    static constexpr T value {};
-};
-
-template<typename T>
-constexpr T static_const<T>::value;
-
 #define BOOST_BEAST_INLINE_VARIABLE(name, type) \
-    namespace \
-    { \
-        constexpr type name{}; \
-    }
+        constexpr type name{}; 
 
 } // detail
 } // beast
