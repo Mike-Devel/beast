@@ -27,7 +27,7 @@ namespace beast {
 namespace detail {
 
 #define BOOST_BEAST_INLINE_VARIABLE(name, type) \
-        constexpr type name{}; 
+        constexpr type name{} 
 
 } // detail
 } // beast
